@@ -16,7 +16,7 @@ void sort(int *arr, int n)
 				min = j;
 		}
 		arr[j] = arr[min];
-		arr[min] = tmp;
+		arr[min] = temp;
 	}
 }
 
@@ -31,7 +31,7 @@ void printdata(int *arr,int n) {
 	for (int i=0;i<n;i++) {
 		cout << arr[i] << " " ;
 	}
-	cout << endl
+	cout << endl;
 }
 
 int main()
