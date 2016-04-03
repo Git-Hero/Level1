@@ -1,5 +1,5 @@
 // !/usr/bin/g++
-
+// Searches for an element using binary search
 #include <iostream>
 
 int binsearch(int *arr, int l, int r, int val)
@@ -11,7 +11,7 @@ int binsearch(int *arr, int l, int r, int val)
 		return -1;
 	if (arr[mid] >= var)
 		binsearch(arr, mid+1, r, val);
-	else 
+	else
 		binsearch(arr, l, mid-1, val);
 }
 

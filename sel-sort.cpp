@@ -3,6 +3,8 @@
 #include <iomanip>
 using namespace std;
 
+//sorts using insertion sort
+
 void sort(int *arr, int n)
 {
 	int i, j, temp, min;
