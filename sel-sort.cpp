@@ -8,15 +8,17 @@ using namespace std;
 void sort(int *arr, int n)
 {
 	int i, j, temp, min;
-	for (i=1; i<n-1; i++) {
-		temp=arr[j];
+	for (i=0; i<n; i++) {
+	        
 		min = i;
 		for (j = i+1; j < n; j++) {
 			if (arr[min] > arr[j])
 				min = j;
 		}
-		arr[j] = arr[min];
-		arr[min] = tmp;
+		
+                temp=arr[i];
+		arr[i]=arr[min];
+arr[min]=temp;
 	}
 }
 
@@ -31,7 +33,7 @@ void printdata(int *arr,int n) {
 	for (int i=0;i<n;i++) {
 		cout << arr[i] << " " ;
 	}
-	cout << endl
+	cout << endl;
 }
 
 int main()
@@ -42,7 +44,7 @@ int main()
 		int n;
 		cin>>n;
 		int arr[n];
-		getdata(arr, n-1);
+		getdata(arr, n);
 		sort(arr, n);
 		printdata(arr, n);
 	}
