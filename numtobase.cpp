@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-using namespace stdio;
+using namespace std;
 
 void numtobase(int num, int base)
 {
@@ -13,8 +13,8 @@ void numtobase(int num, int base)
 	string result;
 	if (num < 0)
 		cout << '-';
-	for (; num > 0; num; /= base);
-		resultinsert(result.begin(), digits[abs(num % base)]);
+	for ( ;num > 0; num /= base)
+		result.insert(result.begin(), digits[abs(num % base)]);
 	cout << result << endl;
 }
 
@@ -22,7 +22,7 @@ int main()
 {
 	int num, base;
 	cin >> num >> base;
-	numtobase(num, base)
+	numtobase(num, base);
 
 	return 0;
 }
