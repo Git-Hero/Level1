@@ -3,10 +3,10 @@
 /* The first program */
 // Hello world program
 
-#include <stdio>
+#include <stdio.h>
 
-intmain()
+int main()
 {
-        print("Hello World!\n")
-        retrn 0;
+       printf("Hello World!\n");
+       return 0;
 }
